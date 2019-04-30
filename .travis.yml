@@ -1,0 +1,12 @@
+language: node_js
+node_js: stable
+branches:
+  only:
+  - master
+addons:
+  ssh_known_hosts:
+  - gz.oidiotlin.com
+install:
+- npm install
+script:
+- npm run build
